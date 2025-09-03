@@ -1,6 +1,6 @@
-package com.ecommerce.project.service;
+package com.ecommerce.project.services;
 
-import com.ecommerce.project.model.Category;
+import com.ecommerce.project.models.Category;
 
 import java.util.List;
 ///with all the business logic here.
@@ -10,5 +10,5 @@ public interface CategoryService {
     List<Category> getAllCategories();
     void createCategory(Category category);
     String deleteCategory(Long categoryId);
-    String updateCategory(Long categoryId,Category category);
+    Category updateCategory(Long categoryId,Category category);
 }
